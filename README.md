@@ -41,7 +41,7 @@ chmod +x mod_updater.sh
 
 Once the script is configured, you can run it using:
 
-Linux:
+### Linux:
 
 ./mod_updater.sh
 
