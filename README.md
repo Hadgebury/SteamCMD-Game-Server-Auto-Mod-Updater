@@ -13,21 +13,15 @@ Before using this script, ensure you have the following:
 
 # Setup
 
-## 1. Clone this Repository
+## 1. Download the Script Files
 
-Clone the repository to your server by running the following command:
+Download the appropriate script for your system:
 
-### Linux:
+### Linux: Download update_mods.sh
 
-git clone https://github.com/your-username/steamcmd-mod-updater.git
-cd steamcmd-mod-updater
+### Windows: Download update_mods.bat
 
-### Windows:
-
-On Windows, first make sure you have Git Bash or any terminal that supports bash commands, such as PowerShell with Git Bash installed.
-
-git clone https://github.com/your-username/steamcmd-mod-updater.git
-cd steamcmd-mod-updater
+Once you've downloaded the correct script for your operating system, proceed to the setup instructions below.
 
 ## 2. Edit the Script
 
