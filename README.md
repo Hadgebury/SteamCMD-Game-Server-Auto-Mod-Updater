@@ -1,6 +1,3 @@
-# SteamCMD Game Server Auto Mod Updater
-Custom Script That Auto Updates Mods On A SteamCMD Compatible Game Server
-
 # STEAMCMD Mod Updater for Game Servers
 
 This script helps you automatically update mods for your STEAMCMD-based game server by downloading mods from the Steam Workshop. It checks the latest versions of mods, updates them, and ensures only the latest versions are present on your server.
