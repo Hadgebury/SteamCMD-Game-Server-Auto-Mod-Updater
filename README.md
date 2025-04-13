@@ -33,8 +33,7 @@ Open the script file (mod_updater.sh) and update the following variables:
 
 ## 3. Make the Script Executable (Linux Only)
 
-### !!! IF USING PTERODACTYL PANEL SEE THIS FILE: (https://github.com/Hadgebury/SteamCMD-Game-Server-Auto-Mod-Updater/blob/main/Pterodactyl_Panel/Instructions)
-### AND IGNORE THIS SECTION'S INSTRUCTIONS !!!
+### !!! IF USING PTERODACTYL PANEL SEE THIS FILE: (https://github.com/Hadgebury/SteamCMD-Game-Server-Auto-Mod-Updater/blob/main/Pterodactyl_Panel/Instructions) AND IGNORE THIS SECTION'S INSTRUCTIONS !!!
 
 On Linux, ensure the script has execute permissions by running:
 
@@ -56,8 +55,7 @@ bash mod_updater.sh
 
 ## 5. Automate the Script
 
-### !!! IF USING PTERODACTYL PANEL SEE THIS FILE: (https://github.com/Hadgebury/SteamCMD-Game-Server-Auto-Mod-Updater/blob/main/Pterodactyl_Panel/Instructions)
-### AND IGNORE THIS SECTION'S INSTRUCTIONS !!!
+### !!! IF USING PTERODACTYL PANEL SEE THIS FILE: (https://github.com/Hadgebury/SteamCMD-Game-Server-Auto-Mod-Updater/blob/main/Pterodactyl_Panel/Instructions) AND IGNORE THIS SECTION'S INSTRUCTIONS !!!
 
 To keep your mods updated automatically, consider adding the script to a cron job or your server's startup process.
 
