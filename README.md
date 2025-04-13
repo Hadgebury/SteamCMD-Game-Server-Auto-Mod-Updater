@@ -21,7 +21,7 @@ git clone https://github.com/your-username/steamcmd-mod-updater.git
 cd steamcmd-mod-updater
 ```
 
-2. Edit the Script
+### 2. Edit the Script
 Open the script file (mod_updater.sh) and update the following variables:
 
 GAME_ID: Replace <GAME_ID> with the correct Steam App ID for your game. You can find this ID on the Steam Database.
@@ -30,7 +30,7 @@ MODS_DIR: Ensure this is set to the directory where you want the mods to be inst
 
 MODLIST_FILE: Make sure this file contains a list of mod IDs you wish to download. Each mod ID should be on a separate line.
 
-3. Make the Script Executable
+### 3. Make the Script Executable
 Ensure the script has execute permissions by running:
 
 bash
@@ -59,7 +59,8 @@ bash
 Copy
 Edit
 0 2 * * * /path/to/mod_updater.sh
-How It Works
+
+## How It Works
 Mod List: You provide a list of mod IDs in modlist.txt. These are the mods that the script will check and update.
 
 SteamCMD: The script uses SteamCMD to download the latest versions of mods from the Steam Workshop based on the mod IDs.
@@ -68,7 +69,7 @@ Version Control: The script computes a hash of the downloaded mod and compares i
 
 Cleanup: Old or missing mods that are no longer in modlist.txt are automatically removed from the server to avoid unnecessary files taking up space.
 
-Configuration
+## Configuration
 Here’s a list of the important configuration variables that you can modify:
 
 STEAMCMD: Path to your SteamCMD installation (/home/container/steamcmd/steamcmd.sh by default).
