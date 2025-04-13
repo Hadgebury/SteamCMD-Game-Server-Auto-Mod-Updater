@@ -17,9 +17,13 @@ Before using this script, ensure you have the following:
 
 Download the appropriate script for your system:
 
-### Linux: Download update_mods.sh
+### Linux:
 
-### Windows: Download update_mods.bat
+Download update_mods.sh
+
+### Windows:
+
+Download update_mods.bat
 
 Once you've downloaded the correct script for your operating system, proceed to the setup instructions below.
 
@@ -95,9 +99,13 @@ Below are the key configuration variables you can modify in the script:
 ## STEAMCMD
 Path to your SteamCMD installation.
 
-### Linux: /home/container/steamcmd/steamcmd.sh
+### Linux:
 
-### Windows: Adjust the path as necessary (e.g., C:\path\to\steamcmd\steamcmd.exe).
+/home/container/steamcmd/steamcmd.sh
+
+### Windows:
+
+Adjust the path as necessary (e.g., C:\path\to\steamcmd\steamcmd.exe).
 
 ## GAME_ID
 Replace <GAME_ID> with your Steam App ID for the game you want to update.
@@ -105,27 +113,43 @@ Replace <GAME_ID> with your Steam App ID for the game you want to update.
 ## MODS_DIR
 The directory where the mods will be installed on your server.
 
-### Linux: /home/container/Mods
+### Linux:
 
-### Windows: Adjust the path as necessary (e.g., C:\path\to\Mods).
+/home/container/Mods
+
+### Windows:
+
+Adjust the path as necessary (e.g., C:\path\to\Mods).
 
 ## MODLIST_FILE
 The path to the file that contains the list of mod IDs you want to install or update.
 
-### Linux: /home/container/modlist.txt
+### Linux:
 
-### Windows: Adjust the path as necessary (e.g., C:\path\to\modlist.txt).
+/home/container/modlist.txt
+
+### Windows:
+
+Adjust the path as necessary (e.g., C:\path\to\modlist.txt).
 
 ## HASH_FILE
 The file where mod hashes are stored to check for updates.
 
-### Linux: /home/container/modhashes.txt
+### Linux:
 
-### Windows: Adjust the path as necessary (e.g., C:\path\to\modhashes.txt).
+/home/container/modhashes.txt
+
+### Windows:
+
+Adjust the path as necessary (e.g., C:\path\to\modhashes.txt).
 
 ## FOLDER_MAP_FILE
 The file where mod folder mappings are stored.
 
-### Linux: /home/container/modfolders.txt
+### Linux:
 
-### Windows: Adjust the path as necessary (e.g., C:\path\to\modfolders.txt).
+/home/container/modfolders.txt
+
+### Windows:
+
+Adjust the path as necessary (e.g., C:\path\to\modfolders.txt).
