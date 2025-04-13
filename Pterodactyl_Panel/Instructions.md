@@ -12,40 +12,14 @@ The STEAMCMD Mod Updater script allows you to automatically update mods from the
 
 ### 3. Upload the update_mods.sh and required files into your server’s /home/container directory (or the root directory visible in File Manager).
 
-## 2. Configure the Script
+## 2.
 
-### 1. In the File Manager, edit the update_mods.sh file and update the following variables at the top of the script:
+To run the script every time the server starts:
 
-   STEAMCMD="/home/container/steamcmd/steamcmd.sh"
-   GAME_ID="736590"                     # Replace with your game’s App ID
-   MODS_DIR="/home/container/Mods"
-   MODLIST_FILE="/home/container/modlist.txt"
-   HASH_FILE="/home/container/modhashes.txt"
-   FOLDER_MAP_FILE="/home/container/modfolders.txt"
+1. Go to the Startup tab in the Pterodactyl panel.
 
-### 2. Ensure paths match your server structure. If modhashes.txt or modfolders.txt do not exist, the script will auto-create them.
+2. Modify the Startup Command to prepend the updater. For example:
 
-### 3. Save the file.
+   /home/container/update_mods.sh && ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping
 
-### 3. Make the Script Executable
-
-Open the Console tab of your server and run:
-
-   chmod +x update_mods.sh
-
-### 4. Run the Script
-
-From the Console, execute the script manually using:
-
-   ./update_mods.sh
-
-This will:
-- Read mod IDs from modlist.txt
-- Use SteamCMD to download/update them
-- Compare hash values to detect changes
-- Move updated mods into the Mods directory
-- Clean up removed mods
-
-## 5. Automate
-
-This can be done using the game server schedules tab and sending a server restart power action
+### Replace ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping with your actual game launch command.
