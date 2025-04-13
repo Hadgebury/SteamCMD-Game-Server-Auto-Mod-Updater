@@ -88,13 +88,44 @@ For Windows, you can use Task Scheduler to run the script automatically at a set
 3. Version Control: The script computes a hash of the downloaded mod and compares it with the stored hash from the previous run. If a new version is found, it will replace the old version.
 4. Cleanup: Old or missing mods that are no longer in modlist.txt are automatically removed from the server to avoid unnecessary files taking up space.
 
-# Configuration
+# Configuration Variables
 
-Here’s a list of the important configuration variables that you can modify:
+Below are the key configuration variables you can modify in the script:
 
-STEAMCMD: Path to your SteamCMD installation (/home/container/steamcmd/steamcmd.sh by default on Linux; adjust the path for Windows).
-GAME_ID: Replace <GAME_ID> with your Steam App ID.
-MODS_DIR: The directory where the mods will be installed on your server. The default is /home/container/Mods on Linux; adjust the path for Windows.
-MODLIST_FILE: The path to the file that contains the list of mod IDs you want to install/update (/home/container/modlist.txt by default on Linux; adjust for Windows).
-HASH_FILE: The file where mod hashes are stored to check for updates (/home/container/modhashes.txt by default on Linux; adjust for Windows).
-FOLDER_MAP_FILE: The file where mod folder mappings are stored (/home/container/modfolders.txt by default on Linux; adjust for Windows).
+## STEAMCMD
+Path to your SteamCMD installation.
+
+### Linux: /home/container/steamcmd/steamcmd.sh
+
+### Windows: Adjust the path as necessary (e.g., C:\path\to\steamcmd\steamcmd.exe).
+
+## GAME_ID
+Replace <GAME_ID> with your Steam App ID for the game you want to update.
+
+## MODS_DIR
+The directory where the mods will be installed on your server.
+
+### Linux: /home/container/Mods
+
+### Windows: Adjust the path as necessary (e.g., C:\path\to\Mods).
+
+## MODLIST_FILE
+The path to the file that contains the list of mod IDs you want to install or update.
+
+### Linux: /home/container/modlist.txt
+
+### Windows: Adjust the path as necessary (e.g., C:\path\to\modlist.txt).
+
+## HASH_FILE
+The file where mod hashes are stored to check for updates.
+
+### Linux: /home/container/modhashes.txt
+
+### Windows: Adjust the path as necessary (e.g., C:\path\to\modhashes.txt).
+
+## FOLDER_MAP_FILE
+The file where mod folder mappings are stored.
+
+### Linux: /home/container/modfolders.txt
+
+### Windows: Adjust the path as necessary (e.g., C:\path\to\modfolders.txt).
