@@ -1,11 +1,11 @@
 # --- Configuration ---
-$STEAMCMD = "C:\Path\To\steamcmd.exe"
-$GAME_ID = "<GAME_ID>" # Replace with the Steam App ID
-$MODS_DIR = "C:\Path\To\Mods"
-$MODLIST_FILE = "C:\Path\To\modlist.txt"
-$HASH_FILE = "C:\Path\To\modhashes.txt"
-$FOLDER_MAP_FILE = "C:\Path\To\modfolders.txt"
-$WORKSHOP_BASE = "C:\Path\To\Steam\steamapps\workshop\content\$GAME_ID"
+$STEAMCMD = "C:\Path\To\steamcmd.exe" # Change Directory to store steamcmd
+$GAME_ID = "<GAME_ID>" # Replace <GAME_ID> with the Steam App ID for your game
+$MODS_DIR = "C:\Path\To\Mods" # Change Directory to store downloaded mods
+$MODLIST_FILE = "C:\Path\To\modlist.txt" # Change Directory to store modlist.txt
+$HASH_FILE = "C:\Path\To\modhashes.txt" # Change Directory to store modhashes.txt
+$FOLDER_MAP_FILE = "C:\Path\To\modfolders.txt" # Change Directory to store modfolders.txt
+$WORKSHOP_BASE = "C:\Path\To\Steam\steamapps\workshop\content\$GAME_ID" # Change Directory to store steamcmd content
 
 # --- Ensure required files exist ---
 foreach ($file in @($MODLIST_FILE, $HASH_FILE, $FOLDER_MAP_FILE)) {
