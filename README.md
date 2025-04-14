@@ -67,6 +67,7 @@ The `modlist.txt` file is where you list the Steam Workshop IDs of the mods you 
 
 - You can include as many mod IDs as you want — just add one per line.
 - The script will automatically handle downloading and updating for you.
+- When you remove a Mod ID from the list. The script will automatically remove the mod files from the server upon next restart/execution
 
 ## 3. Make the Script Executable (Linux Only)
 
