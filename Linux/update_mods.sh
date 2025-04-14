@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # --- Configuration ---
-STEAMCMD="/home/container/steamcmd/steamcmd.sh"
+STEAMCMD="/home/container/steamcmd/steamcmd.sh" # Change Directory to store steamcmd
 GAME_ID="<GAME_ID>"  # Replace <GAME_ID> with the Steam App ID for your game
-MODS_DIR="/home/container/Mods"  # Directory to store downloaded mods
-MODLIST_FILE="/home/container/modlist.txt"
-HASH_FILE="/home/container/modhashes.txt"
-FOLDER_MAP_FILE="/home/container/modfolders.txt"
+MODS_DIR="/home/container/Mods"  # Change Directory to store downloaded mods
+MODLIST_FILE="/home/container/modlist.txt" # Change Directory to store modlist.txt
+HASH_FILE="/home/container/modhashes.txt" # Change Directory to store modhashes.txt
+FOLDER_MAP_FILE="/home/container/modfolders.txt" # Change Directory to store modfolders.txt
 
 # --- Ensure required files exist ---
 touch "$MODLIST_FILE"
