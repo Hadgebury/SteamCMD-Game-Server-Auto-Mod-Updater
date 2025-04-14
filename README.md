@@ -35,6 +35,37 @@ Open the script file (mod_updater.sh) and update the following variables:
 - MODS_DIR: Ensure this is set to the directory where you want the mods to be installed on your server.
 - MODLIST_FILE: Make sure this file contains a list of mod IDs you wish to download. Each mod ID should be on a separate line.
 
+
+# How to Get Steam Workshop Mod IDs for modlist.txt
+
+The `modlist.txt` file is where you list the Steam Workshop IDs of the mods you want your server to automatically download and update.
+
+##  From the Steam Workshop URL
+
+1. Visit your game's Steam Workshop page.
+   Example: https://steamcommunity.com/app/480/workshop/ (replace 480 with your game’s App ID)
+
+2. Click on a mod you want to use.
+
+3. Look at the URL in your browser’s address bar.
+   It will look like this:
+   https://steamcommunity.com/sharedfiles/filedetails/?id=1234567890
+
+4. Copy the number after `id=`. For example: 1234567890
+
+5. Paste that number into your `modlist.txt` file (one ID per line).
+
+### Example modlist.txt
+
+1234567890
+9876543210
+5556667778
+
+### Tips
+
+- You can include as many mod IDs as you want — just add one per line.
+- The script will automatically handle downloading and updating for you.
+
 ## 3. Make the Script Executable (Linux Only)
 
 ### !!! IF USING PTERODACTYL PANEL SEE THIS FILE: ([Pterodactyl Panel Setup](https://github.com/Hadgebury/SteamCMD-Game-Server-Auto-Mod-Updater/blob/main/Pterodactyl_Panel/Instructions.md)) AND IGNORE THIS SECTION'S INSTRUCTIONS !!!
