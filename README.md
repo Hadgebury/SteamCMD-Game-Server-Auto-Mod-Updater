@@ -92,9 +92,9 @@ For Windows, you can use Task Scheduler to run the script automatically at a set
 3. Version Control: The script computes a hash of the downloaded mod and compares it with the stored hash from the previous run. If a new version is found, it will replace the old version.
 4. Cleanup: Old or missing mods that are no longer in modlist.txt are automatically removed from the server to avoid unnecessary files taking up space.
 
-# Configuration Variables
+# Configuration Variables / File Paths
 
-Below are the key configuration variables you can modify in the script:
+Below are the key configuration variables you can modify in the script and their usual file paths:
 
 ## STEAMCMD
 Path to your SteamCMD installation.
