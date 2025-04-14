@@ -5,6 +5,8 @@ $MODS_DIR = "C:\Path\To\Mods" # Change Directory to store downloaded mods
 $MODLIST_FILE = "C:\Path\To\modlist.txt" # Change Directory to store modlist.txt
 $HASH_FILE = "C:\Path\To\modhashes.txt" # Change Directory to store modhashes.txt
 $FOLDER_MAP_FILE = "C:\Path\To\modfolders.txt" # Change Directory to store modfolders.txt
+
+# --- Derived Paths ---
 $WORKSHOP_BASE = "C:\Path\To\Steam\steamapps\workshop\content\$GAME_ID" # Change Directory to store steamcmd content
 
 # --- Ensure required files exist ---
