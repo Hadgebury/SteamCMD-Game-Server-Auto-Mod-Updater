@@ -20,4 +20,12 @@ The STEAMCMD Mod Updater script allows you to automatically update mods from the
 
    /home/container/update_mods.sh && ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping
 
-### Insert /home/container/update_mods.sh && Infront of your existing start command or Replace ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping with your actual game launch command.
+### Insert 
+
+/home/container/update_mods.sh && Infront of your existing start command 
+
+or 
+
+### Replace 
+
+./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping with your actual game launch command.
