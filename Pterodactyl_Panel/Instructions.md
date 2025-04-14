@@ -5,16 +5,14 @@ The STEAMCMD Mod Updater script allows you to automatically update mods from the
 ## 1. Upload the Script Files
 
 ### 1. Download the following files from the GitHub repository to your local machine:
+   
    - update_mods.sh
-   - modlist.txt (and optionally modhashes.txt, modfolders.txt if you have them already)
 
 ### 2. Go to your server’s File Manager in the Pterodactyl panel.
 
-### 3. Upload the update_mods.sh and required files into your server’s /home/container directory (or the root directory visible in File Manager).
+### 3. Upload the update_mods.sh into your server’s /home/container directory (or the root directory visible in File Manager).
 
-## 2.
-
-To run the script every time the server starts:
+## 2. Execute the script on Game Server Start/Restart
 
 1. Go to the Startup tab in the Pterodactyl panel.
 
