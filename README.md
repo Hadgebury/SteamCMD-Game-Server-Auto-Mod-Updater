@@ -58,7 +58,9 @@ The `modlist.txt` file is where you list the Steam Workshop IDs of the mods you 
 ### Example modlist.txt
 
 1234567890
+
 9876543210
+
 5556667778
 
 ### Tips
