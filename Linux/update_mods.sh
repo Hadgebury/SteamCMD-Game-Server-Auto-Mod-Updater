@@ -9,7 +9,7 @@ HASH_FILE="/home/container/modhashes.txt" # Stores mod hashes
 FOLDER_MAP_FILE="/home/container/modfolders.txt" # Maps mod IDs to folder names
 
 # --- Derived Paths ---
-WORKSHOP_BASE="/home/container/Steam/steamapps/workshop/content/$GAME_ID"
+WORKSHOP_BASE="/home/container/Steam/steamapps/workshop/content/$GAME_ID" # Change Directory to store steamcmd content
 
 # --- Ensure required files exist ---
 touch "$MODLIST_FILE"
