@@ -16,9 +16,11 @@ The STEAMCMD Mod Updater script allows you to automatically update mods from the
 
 1. Go to the Startup tab in the Pterodactyl panel.
 
-2. Modify the Startup Command to prepend the updater. For example:
+2. Modify the Startup Command to prepend the updater.
 
-   /home/container/update_mods.sh && ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping
+### **Example:**
+
+/home/container/update_mods.sh && ./HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Linux-Shipping
 
 ### Insert 
 
