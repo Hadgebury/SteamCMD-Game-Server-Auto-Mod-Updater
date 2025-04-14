@@ -1,12 +1,15 @@
 #!/bin/bash
 
 # --- Configuration ---
-STEAMCMD="/home/container/steamcmd/steamcmd.sh" # Change Directory to store steamcmd
+STEAMCMD="/home/container/steamcmd/steamcmd.sh" # Path to steamcmd.sh
 GAME_ID="<GAME_ID>"  # Replace <GAME_ID> with the Steam App ID for your game
-MODS_DIR="/home/container/Mods"  # Change Directory to store downloaded mods
-MODLIST_FILE="/home/container/modlist.txt" # Change Directory to store modlist.txt
-HASH_FILE="/home/container/modhashes.txt" # Change Directory to store modhashes.txt
-FOLDER_MAP_FILE="/home/container/modfolders.txt" # Change Directory to store modfolders.txt
+MODS_DIR="/home/container/Mods"  # Directory to store downloaded mods
+MODLIST_FILE="/home/container/modlist.txt" # List of mod IDs
+HASH_FILE="/home/container/modhashes.txt" # Stores mod hashes
+FOLDER_MAP_FILE="/home/container/modfolders.txt" # Maps mod IDs to folder names
+
+# --- Derived Paths ---
+WORKSHOP_BASE="/home/container/Steam/steamapps/workshop/content/$GAME_ID"
 
 # --- Ensure required files exist ---
 touch "$MODLIST_FILE"
@@ -38,7 +41,7 @@ while IFS= read -r MOD_ID || [[ -n "$MOD_ID" ]]; do
     # Download via SteamCMD
     $STEAMCMD +login anonymous +workshop_download_item $GAME_ID $MOD_ID +quit
 
-    WORKSHOP_PATH="/home/container/Steam/steamapps/workshop/content/$GAME_ID/$MOD_ID"
+    WORKSHOP_PATH="$WORKSHOP_BASE/$MOD_ID"
     if [ ! -d "$WORKSHOP_PATH" ]; then
         echo "⚠️  Workshop download failed or path not found: $WORKSHOP_PATH"
         continue
@@ -69,9 +72,10 @@ while IFS= read -r MOD_ID || [[ -n "$MOD_ID" ]]; do
 
     # Remove old mod version (if known and folder exists)
     OLD_FOLDER="${MOD_FOLDERS[$MOD_ID]}"
-    if [ -n "$OLD_FOLDER" ] && [ -d "$MODS_DIR/$OLD_FOLDER" ]; then
-        echo "🗑️  Removing old version: $MODS_DIR/$OLD_FOLDER"
-        rm -rf "$MODS_DIR/$OLD_FOLDER"
+    OLD_PATH="$MODS_DIR/$OLD_FOLDER"
+    if [ -n "$OLD_FOLDER" ] && [ -d "$OLD_PATH" ]; then
+        echo "🗑️  Removing old version: $OLD_PATH"
+        rm -rf "$OLD_PATH"
     fi
 
     # Remove destination if it already exists before moving
@@ -102,9 +106,10 @@ for MOD_ID in "${!MOD_HASHES[@]}"; do
 
         # Remove mod folder
         FOLDER_NAME="${MOD_FOLDERS[$MOD_ID]}"
-        if [ -n "$FOLDER_NAME" ] && [ -d "$MODS_DIR/$FOLDER_NAME" ]; then
-            echo "🗑️  Removing folder: $MODS_DIR/$FOLDER_NAME"
-            rm -rf "$MODS_DIR/$FOLDER_NAME"
+        REMOVE_PATH="$MODS_DIR/$FOLDER_NAME"
+        if [ -n "$FOLDER_NAME" ] && [ -d "$REMOVE_PATH" ]; then
+            echo "🗑️  Removing folder: $REMOVE_PATH"
+            rm -rf "$REMOVE_PATH"
         fi
 
         # Unset from hash and folder maps
